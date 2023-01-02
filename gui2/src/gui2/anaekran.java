@@ -196,6 +196,18 @@ public class anaekran extends JFrame {
 		panel_1.add(lblMasa_4_2);
 		
 		JButton btnNewButton_2 = new JButton("New button");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				siparismasa8 sm8 = null;
+				try {
+					sm8 = new siparismasa8();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				sm8.setVisible(true);
+			}
+		});
 		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\seyme\\Desktop\\ff3.jpg.jpeg"));
 		btnNewButton_2.setBounds(555, 205, 128, 118);
 		panel_1.add(btnNewButton_2);
@@ -305,6 +317,19 @@ public class anaekran extends JFrame {
 		panel_1.add(btnNewButton_3_5);
 		
 		JButton btnNewButton_3_6 = new JButton("New button");
+		btnNewButton_3_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				siparismasa7 sm7 = null;
+				try {
+					sm7 = new siparismasa7();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				sm7.setVisible(true);
+				
+			}
+		});
 		btnNewButton_3_6.setIcon(new ImageIcon("C:\\Users\\seyme\\Desktop\\ff3.jpg.jpeg"));
 		btnNewButton_3_6.setBounds(381, 206, 128, 117);
 		panel_1.add(btnNewButton_3_6);
